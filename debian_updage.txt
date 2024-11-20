@@ -1,0 +1,30 @@
+Ubuntu 20.04.6    upgrade Ubuntu 22.04.4 LTS
+
+
+
+sudo apt update
+sudo apt upgrade
+
+#Install the Upgrade Tool: Make sure the update-manager-core package is installed. If not, install it:
+
+sudo apt install update-manager-core
+
+
+#Run the Upgrade: After installing update-manager-core, run the upgrade command:
+
+
+sudo do-release-upgrade
+
+#Follow On-Screen Instructions: During the upgrade process, you'll be asked to confirm various actions. Follow the prompts to proceed with the upgrade.
+
+#Reboot: Once the upgrade process is complete, it's advisable to reboot your system to ensure all changes take effect:
+
+
+sudo reboot
+
+#Check New Ubuntu Version: After rebooting, you can verify that you're now running Ubuntu 22.04.4 LTS by running:
+
+
+lsb_release -a
+
+#That's it! Your Ubuntu system should now be upgraded to Ubuntu 22.04.4 LTS. Remember to back up any important data before performing the upgrade, and ensure you have a stable internet connection throughout the process.
